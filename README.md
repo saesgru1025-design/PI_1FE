@@ -8,7 +8,7 @@ Asegúrate de tener instalados los siguientes programas antes de comenzar:
 - [Node.js](https://nodejs.org/) (versión 18 o superior recomendada)
 - Angular CLI (se puede instalar globalmente con `npm install -g @angular/cli`)
 
-## 🛠️ Paso a Paso: Cómo Ejecutar el Proyecto Siempre
+## Ejecutar el proyecto siempre
 
 Para abrir y ejecutar tu aplicación en modo desarrollo, siempre debes seguir estos pasos:
 

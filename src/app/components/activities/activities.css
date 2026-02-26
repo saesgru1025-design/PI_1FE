@@ -1,0 +1,155 @@
+.activities-container {
+    animation: fadeIn 0.4s ease;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-input,
+.filter-select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.search-input {
+    flex: 1;
+    max-width: 400px;
+}
+
+.filter-select {
+    min-width: 200px;
+    background-color: white;
+}
+
+.activities-table-wrapper {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.activities-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activities-table th,
+.activities-table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.activities-table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.activities-table td {
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+}
+
+.activities-table tr:hover {
+    background-color: #f8fafc;
+}
+
+.tag {
+    font-size: 0.8rem;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-weight: 600;
+}
+
+.bg-red {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.bg-blue {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.status {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.status.pending {
+    background-color: #fffbeb;
+    color: #d97706;
+}
+
+.status.doing {
+    background-color: #ecfdf5;
+    color: #059669;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-right: 5px;
+    color: #64748b;
+    transition: transform 0.2s;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

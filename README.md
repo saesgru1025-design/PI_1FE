@@ -1,59 +1,50 @@
-# FE
+# 📅 Mini-proyecto 1: Planificador de Estudio (Frontend)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+Este proyecto propone construir un producto digital (interfaz web frontend) que permita gestionar el proceso de planificación de los estudiantes universitarios de forma clara, eficiente y centrada en las personas usuarias, especialmente cuando surgen imprevistos.
 
-## Development server
+## 🚀 Pre-requisitos
 
-To start a local development server, run:
+Asegúrate de tener instalados los siguientes programas antes de comenzar:
+- [Node.js](https://nodejs.org/) (versión 18 o superior recomendada)
+- Angular CLI (se puede instalar globalmente con `npm install -g @angular/cli`)
 
-```bash
-ng serve
-```
+## 🛠️ Paso a Paso: Cómo Ejecutar el Proyecto Siempre
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Para abrir y ejecutar tu aplicación en modo desarrollo, siempre debes seguir estos pasos:
 
-## Code scaffolding
+1. **Abre tu Terminal (CMD, PowerShell o la terminal de VS Code).**
+2. **Navega a la carpeta principal del frontend (`FE`):**
+   ```bash
+   cd C:/xampp/htdocs/LOL/FE
+   ```
+   *(Asegúrate de ajustar la ruta si cambiaste de lugar la carpeta).*
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Instala las dependencias (Solo si es la primera vez o añadiste algún paquete):**
+   ```bash
+   npm install
+   ```
 
-```bash
-ng generate component component-name
-```
+4. **Inicia el Servidor de Desarrollo:**
+   ```bash
+   npm start
+   ```
+   *(También puedes usar `ng serve` si tienes Angular de manera global).*
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+5. **Abre el proyecto en tu navegador:**
+   Ingresa a la siguiente dirección en Chrome, Edge o Firefox:
+   > **[http://localhost:4200/](http://localhost:4200/)**
 
-```bash
-ng generate --help
-```
+La aplicación se recargará automáticamente si realizas y guardas cambios en cualquier archivo fuente.
 
-## Building
+## 🔌 Conectar con un Backend en Django (Próximos Pasos)
 
-To build the project run:
+El proyecto en Angular está preparado con `provideHttpClient()` para hacer peticiones HTTP. Cuando el Backend en Django esté listo en `http://localhost:8000`:
+1. Habilita CORS en el proyecto Django.
+2. Crea `Services` en Angular para hacer peticiones tipo GET/POST hacia Django (`HttpClient.get()`).
+3. Sustituye los datos de ejemplo del Dashboard (mocks en el código HTML) por los datos que retorna el servicio.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📂 Estructura Principal
+- `src/app/app.html` y `app.css` -> Layout base del Planificador Web con la barra lateral.
+- `src/app/components/dashboard` -> Vista de Inicio (Tarjetas de progreso, resumen semanal).
+- `src/app/components/activities` -> Gestor de actividades evaluativas (Tabla con filtros).
+- `src/app/app.routes.ts` -> Manejo de las rutas de la aplicación.

@@ -1,8 +1,8 @@
-# 📅 Mini-proyecto 1: Planificador de Estudio (Frontend)
+# Mini-proyecto 1: Planificador de Estudio (Frontend)
 
 Este proyecto propone construir un producto digital (interfaz web frontend) que permita gestionar el proceso de planificación de los estudiantes universitarios de forma clara, eficiente y centrada en las personas usuarias, especialmente cuando surgen imprevistos.
 
-## 🚀 Pre-requisitos
+## Pre-requisitos
 
 Asegúrate de tener instalados los siguientes programas antes de comenzar:
 - [Node.js](https://nodejs.org/) (versión 18 o superior recomendada)

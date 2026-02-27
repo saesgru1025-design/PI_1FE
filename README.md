@@ -1,4 +1,4 @@
-# LoginAngular
+# Mini-proyecto 1: Login Angular
 
 Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 21.2.0.
 

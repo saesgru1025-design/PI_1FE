@@ -36,14 +36,14 @@ Para abrir y ejecutar tu aplicación en modo desarrollo, siempre debes seguir es
 
 La aplicación se recargará automáticamente si realizas y guardas cambios en cualquier archivo fuente.
 
-## 🔌 Conectar con un Backend en Django (Próximos Pasos)
+## Conectar con un Backend en Django (Próximos Pasos)
 
 El proyecto en Angular está preparado con `provideHttpClient()` para hacer peticiones HTTP. Cuando el Backend en Django esté listo en `http://localhost:8000`:
 1. Habilita CORS en el proyecto Django.
 2. Crea `Services` en Angular para hacer peticiones tipo GET/POST hacia Django (`HttpClient.get()`).
 3. Sustituye los datos de ejemplo del Dashboard (mocks en el código HTML) por los datos que retorna el servicio.
 
-## 📂 Estructura Principal
+## Estructura Principal
 - `src/app/app.html` y `app.css` -> Layout base del Planificador Web con la barra lateral.
 - `src/app/components/dashboard` -> Vista de Inicio (Tarjetas de progreso, resumen semanal).
 - `src/app/components/activities` -> Gestor de actividades evaluativas (Tabla con filtros).

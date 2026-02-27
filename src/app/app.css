@@ -1,0 +1,97 @@
+.login-glass-card {
+  background: var(--study-glass);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--study-glass-border);
+  border-radius: 24px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: var(--white);
+}
+
+.brand-logo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.input-field {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.input-field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--study-glass-border);
+  border-radius: 12px;
+  color: white;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--white);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: var(--white); /* Botón blanco para resaltar sobre el fondo azul */
+  color: var(--study-blue-dark);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #f0f0f0;
+}
+
+.login-footer {
+  margin-top: 2rem;
+}
+
+.login-footer a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.login-footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

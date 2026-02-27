@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Azules extraídos de la foto del monitor */
+  --study-blue-bright: #0081f1;
+  --study-blue-dark: #0056b3;
+  --study-glass: rgba(255, 255, 255, 0.15);
+  --study-glass-border: rgba(255, 255, 255, 0.2);
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* El fondo degradado que se ve en la imagen */
+  background: radial-gradient(circle at top right, #3ca5ff, var(--study-blue-dark));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

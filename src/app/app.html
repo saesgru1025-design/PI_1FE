@@ -1,0 +1,39 @@
+<div class="planner-layout">
+  <nav class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">🎓</div>
+      <h2>StudyPlanner</h2>
+    </div>
+
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <span class="nav-icon">📊</span>
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a routerLink="/activities" routerLinkActive="active">
+          <span class="nav-icon">📝</span>
+          Actividades
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <div class="user-profile">
+        <div class="avatar">U</div>
+        <div class="user-info">
+          <span class="name">Universitario</span>
+          <span class="role">Estudiante</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
